@@ -63,6 +63,12 @@ public class PlayerController : MonoBehaviour
     public bool facingRight = true;
 
     #endregion
+
+    #region Respawn
+
+    public Vector3 lastGroundedPosition;
+
+    #endregion
     
     void Update()
     {
@@ -196,6 +202,7 @@ public class PlayerController : MonoBehaviour
             dahsUsed = false; // Reset dash usage when grounded
             doubleJumpUsed = false; // Reset double jump when grounded
             jumpUsed = false; // Reset jump usage when grounded
+            lastGroundedPosition = transform.position;
         }
         if(!wasGrounded && isGrounded)
         {

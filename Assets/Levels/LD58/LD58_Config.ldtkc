@@ -21,7 +21,9 @@
         {
             "_key": "IntGrid_2",
             "_asset": {
-                "instanceID": 0
+                "fileID": 11400000,
+                "guid": "733c09029ae2834428c88fdbaa78ade0",
+                "type": 2
             }
         },
         {
@@ -31,9 +33,25 @@
                 "guid": "8abdae0658d0d4a4e9f0965f13bf2308",
                 "type": 2
             }
+        },
+        {
+            "_key": "IntGrid_4",
+            "_asset": {
+                "fileID": 11400000,
+                "guid": "8abdae0658d0d4a4e9f0965f13bf2308",
+                "type": 2
+            }
         }
     ],
     "Entities": [
+        {
+            "_key": "ZDoor",
+            "_asset": {
+                "fileID": 7986359165569999509,
+                "guid": "cce744f39ae25f04e88a44a7c9db7ebb",
+                "type": 3
+            }
+        },
         {
             "_key": "Collectible1",
             "_asset": {

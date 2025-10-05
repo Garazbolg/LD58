@@ -14,8 +14,8 @@ TagManager:
   - Player
   - Collision
   - Collectibles
-  - 
-  - 
+  - Interactable
+  - Trap
   - 
   - 
   - 

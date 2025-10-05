@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &553232100346233842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6370220188407452618}
+  m_Layer: 6
+  m_Name: InteractPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6370220188407452618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553232100346233842}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5180691534678263753}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &691045827168625696
 GameObject:
   m_ObjectHideFlags: 0
@@ -83,7 +114,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 1176726286, guid: 5a9333f8829ab7944865a5087e23fab0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 2}
@@ -5031,11 +5062,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5180691534678263753}
+  - component: {fileID: 5872464781969388259}
   - component: {fileID: 1041891581328655511}
   - component: {fileID: 1441980253165378912}
   - component: {fileID: 6452958616432545846}
   - component: {fileID: 2398268820951294557}
   - component: {fileID: 146503778559321091}
+  - component: {fileID: 1687026639423462673}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -5058,8 +5091,21 @@ Transform:
   m_Children:
   - {fileID: 6353252519734704211}
   - {fileID: 2424671502473471529}
+  - {fileID: 6370220188407452618}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5872464781969388259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789115879360066333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9da1283e3b342a38092f7fc817e73e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
 --- !u!114 &1041891581328655511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5111,7 +5157,7 @@ MonoBehaviour:
   isDashing: 0
   dahsUsed: 0
   dashSound: {fileID: 8300000, guid: 82b74bd81cebeba4fafff16d9baf853a, type: 3}
-  facingRight: 1
+  facingRight: 0
 --- !u!70 &1441980253165378912
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5205,4 +5251,22 @@ MonoBehaviour:
   collectionEffect: {fileID: 5613425813634957201}
   collectionSound: {fileID: 8300000, guid: a7b90ecaa36eebb438e751fd180f0bab, type: 3}
   collectableDatas: []
-  collectAction: {fileID: -7556141655821972331, guid: e4ef7704ea8afa84089b655c825b4e8e, type: 3}
+--- !u!114 &1687026639423462673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789115879360066333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd001743ced4fea96f5b8235a0bfa4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactor
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  interactRadius: 1
+  interactPoint: {fileID: 6370220188407452618}
+  interactAction: {fileID: -7556141655821972331, guid: e4ef7704ea8afa84089b655c825b4e8e, type: 3}
+  cooldownTime: 0.5
