@@ -179,6 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Library
   zDoorSound: {fileID: 8300000, guid: 2255b402e98fc6e4c954b74d16a4066d, type: 3}
+  trapDeathSound: {fileID: 8300000, guid: 27f47fd3336d143429b6d20a729f7c1b, type: 3}
 --- !u!1 &5921421126386559096
 GameObject:
   m_ObjectHideFlags: 0

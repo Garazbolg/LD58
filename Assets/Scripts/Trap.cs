@@ -22,6 +22,7 @@ public class Trap : Trigger
         playerRigidbody.linearVelocity = Vector2.zero;
         playerRigidbody.gravityScale = 0;
         InputController.instance.DisableInputs();
+        AudioSource.PlayClipAtPoint(Library.instance.trapDeathSound, playerController.transform.position, 0.5f);
         
         yield return FadeToColor.instance.Fade(0.5f, Color.red, AnimationCurveExtra.FastIn(0, 0, 1, 1));
         playerController.transform.position = new Vector3(Mathf.Floor(playerController.lastGroundedPosition.x) + 0.5f,
