@@ -1,0 +1,46 @@
+{
+    "PixelsPerUnit": 16,
+    "CustomLevelPrefab": {
+        "instanceID": 0
+    },
+    "IntGridValueColorsVisible": false,
+    "UseCompositeCollider": true,
+    "GeometryType": 0,
+    "CreateBackgroundColor": false,
+    "CreateLevelBoundsTrigger": false,
+    "UseParallax": false,
+    "IntGridValues": [
+        {
+            "_key": "IntGrid_1",
+            "_asset": {
+                "fileID": 11400000,
+                "guid": "8abdae0658d0d4a4e9f0965f13bf2308",
+                "type": 2
+            }
+        },
+        {
+            "_key": "IntGrid_2",
+            "_asset": {
+                "instanceID": 0
+            }
+        },
+        {
+            "_key": "IntGrid_3",
+            "_asset": {
+                "fileID": 11400000,
+                "guid": "8abdae0658d0d4a4e9f0965f13bf2308",
+                "type": 2
+            }
+        }
+    ],
+    "Entities": [
+        {
+            "_key": "Collectible1",
+            "_asset": {
+                "fileID": 8611335019883989219,
+                "guid": "4fca63aa3a880ff4ab6da32676876075",
+                "type": 3
+            }
+        }
+    ]
+}
